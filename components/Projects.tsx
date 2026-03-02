@@ -129,16 +129,16 @@ export default function Projects() {
                   <div className={styles.cardHeader}>
                     <h4 className={styles.projectName}>{proj.name}</h4>
                     <div className={styles.projectLinks}>
-                      {proj.liveLink && (
+                      {/* {proj.liveLink && (
                         <a href={proj.liveLink} target="_blank" rel="noopener noreferrer" className={styles.linkIcon} title="Live Demo">
                           🌐 Demo
                         </a>
-                      )}
-                      {proj.githubLink && (
+                      )} */}
+                      {/* {proj.githubLink && (
                         <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className={styles.linkIcon} title="Source Code">
                           💻 Code
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </div>
                   <p className={styles.description}>{proj.description}</p>

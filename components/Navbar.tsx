@@ -46,6 +46,9 @@ export default function Navbar() {
         <a href="#education" onClick={(e) => handleScrollTo(e, 'education')} className={styles.navLink}>
           Education
         </a>
+        <a href="#contact" onClick={(e) => handleScrollTo(e, 'contact')} className={styles.navLink}>
+          Contact
+        </a>
       </div>
     </nav>
   );
