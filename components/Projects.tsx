@@ -68,7 +68,7 @@ const groupedProjects = [
 
 export default function Projects() {
   return (
-    <section className={styles.section}>
+    <section id="projects" className={styles.section}>
       <div className={styles.header}>
         <h2 className={styles.title}>Featured <span className="text-gradient">Projects</span></h2>
         <p className={styles.subtitle}>Professional projects categorized by company.</p>

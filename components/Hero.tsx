@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <div className={`${styles.glassCard} animate-fade-in-up`}>
         <div className={styles.content}>
           <div className={styles.imageContainer}>

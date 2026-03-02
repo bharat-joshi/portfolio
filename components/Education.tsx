@@ -12,7 +12,7 @@ const education = [
 
 export default function Education() {
   return (
-    <section className={styles.section}>
+    <section id="education" className={styles.section}>
       <div className={styles.header}>
         <h2 className={styles.title}>Educational <span className="text-gradient">Background</span></h2>
       </div>

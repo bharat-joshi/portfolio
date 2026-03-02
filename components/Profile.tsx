@@ -5,7 +5,7 @@ import styles from './Profile.module.css';
 
 export default function Profile() {
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={styles.header}>
         <h2 className={styles.title}>About <span className="text-gradient">Me</span></h2>
       </div>

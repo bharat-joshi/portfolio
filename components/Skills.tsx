@@ -19,7 +19,7 @@ const hobbies = [
 
 export default function Skills() {
   return (
-    <section className={styles.section}>
+    <section id="skills" className={styles.section}>
       <div className={styles.header}>
         <h2 className={styles.title}>Skills & <span className="text-gradient">Expertise</span></h2>
       </div>
