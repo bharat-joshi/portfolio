@@ -1,0 +1,311 @@
+bharat joshi  
+ 
+F U L L  S T A C K  D E V E L O P E R   
+Details  
+Surat, India  
++91 99749 77486  
+jb.joshi2009@gmail.com  
+D A T E  O F  B I R T H  
+23/04/1992  
+ 
+Skills  
+SQL 
+     
+HTML & CSS  
+     
+Redux  
+     
+jQuery  
+     
+HTML5  
+     
+React  
+     
+Git 
+     
+JavaScript  
+     
+Angular  
+     
+NGRX  
+     
+RXJS  
+     
+.NEW Core WebAPI  
+     
+ 
+Languages  
+Gujarati  
+     
+Hindi  
+     
+English  
+     
+ 
+Hobbies  
+Reading, Watching Movies, 
+Curious to learn new 
+technology.  
+ Profile  
+Experienced Web Developer  with comprehensive expertise in all stages of 
+modern web development. Skilled in user interface design, testing, and 
+debugging, with strong experience in the design, installation, testing, and 
+maintenance of web applications. Possesses a versatile and robust technical skill 
+set, proficient in .NET Core, Angular 17, Basic React, Node.js, MongoDB, C#, IIS,  
+and Microsoft SQL Server . Demonstrated ability to work effectively both 
+independently and collaboratively in team environments, ensuring high -quality 
+and efficient project delivery.  
+ 
+Employment History  
+Full Stack Developer at Elaunch Solution Pvt. Ltd, Surat  
+June 2015 — June 2019  
+Technologies Used : ASP.NET c#,MVC,.NET Core Web API,HTML, 
+CSS,JavaScript,Jquary,third party integration like redbus,bitcoin,sms,Recharge 
+gateway,payment gateway  
+ 
+Full Stack Developer at S.M. Solutions  Pvt. Ltd , Surat  
+June 2019 — August 2020  
+Technologies Used : ASP.NET core WebAPI,Angular 7,SQL Server,Stencil 
+JS,Umbraco  
+ 
+Frontend Developer at ProjectTree  Pvt. Ltd, Surat  
+August 2 020 — February 2022  
+Technologies Used : Angular JS,Angular 7,HTML,CSS  
+ 
+Frontend Developer at Yosa Technology Pvt. Ltd, Surat  
+February 2022 — February 2024  
+Technologies Used  : Angular 17,Firebase  
+ 
+Full Stack Developer at ProjectTree  Pvt. Ltd, Surat  
+February 2024  — Present  
+Technologies Used  : Angular 17, .Net core 8  
+ 
+Education  
+S.S.C, GSEB Board, Surat  
+March 2006 — March 2007  
+Percentage : 52  
+ 
+H.S.C, GSHEB Board, Surat  
+March 2008 — March 2009  
+Percentage : 72  
+ 
+B.C.A, VNSGU University, Surat  
+March 2009 — March 2012  
+Percentage : 60  
+ 
+M.C.A, GTU University, Surat  
+March 2012 — March 2015  
+S.P.I : 7.6  
+ 
+ 
+Experience  
+ 
+Project: DirectBazaar  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: DirectBazaar  is an MLM (Multi -Level Marketing) system that enables 
+member creation and management using binary plans. The platform also 
+provides additional features such as online bus booking, mobile recharge, and 
+integrated payment gateway services.  
+Technologies Used:  
+Frontend: JavaScript, Moment.js, HTML, CSS, Bootstrap, jQuery, Ajax  
+Backend: C#, ASP.NET MVC, Microsoft SQL Server 2012  
+ 
+Project: MobiGo  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: MobiGo is an Affiliate Shopping Portal that redirects users to 
+popular e -commerce websites such as Flipkart, Amazon, and others. The 
+platform provides cashback to users for purchases made through the portal and 
+maintains a comprehensive purchase history along with a wallet system where 
+cashback is credited upon order confirmation.  
+Technologies Used:  
+• Frontend: JavaScript, HTML, CSS, Bootstrap, jQuery, Ajax  
+• Backend: C#, ASP.NET MVC, Microsoft SQL Server 2012  
+Team Size: 3 Developers  
+ 
+Project: RitzPay  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: RitzPay is a cryptocurrency trading platform designed for buying, 
+selling, and managing digital assets in the dynamic cryptocurrency market. The 
+system provides features such as real -time market analysis, automated trading 
+algorithms, and risk management tools to help traders execute informed trades 
+and monitor market trends. It ensures secure and efficient transactions through 
+encryption and two -factor authentication mechanisms.  
+Technologies Used:  
+• Backend: ASP.NET MVC, Microsoft SQL Server 2014  
+Team Size: 2 Developers  
+ 
+ 
+Project: ApnaShop  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: ApnaShop is an e -commerce shopping cart application designed to 
+streamline online retail transactions, allowing users to browse, select, and 
+purchase products or services efficiently. The system is integrated with an MLM 
+(Multi -Level Marketing) platform to manage member -based sales and 
+commissions.  
+Technologies Used:  
+• Frontend: HTML, CSS, jQuery, Ajax, Bootstrap  
+• Backend: ASP.NET MVC, Web API, Microsoft SQL Server  
+Team Size: 4 Developers  
+ 
+ Project: GiftShare  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: GiftShare is a funding management system designed to facilitate the 
+collection, allocation, and management of financial resources for various 
+initiatives and projects. The platform supports multiple funding sources such as 
+investors, donors, and grants, providing a structured mechanism for distributing 
+funds efficiently to achieve defined objectives.  
+Technologies Used:  
+• Frontend: HTML, CSS, JavaScript  
+• Backend: C#.NET, ASP.NET MVC, Entity Framework, LINQ, Microsoft SQL 
+Server (Stored Procedures)  
+Team Size: 3 Developers  
+ 
+ 
+ 
+ 
+Project: Ventura  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: Ventura is a flight booking system designed to facilitate seamless 
+flight search, booking, and management processes. The platform provides real -
+time flight availability, fare details, and booking confirmations through secure 
+API integrations.  
+Technologies Used:  
+• Frontend: Angular 4, HTML, CSS  
+• Backend: ASP.NET MVC, Web API 2, Microsoft SQL Server 2014, Entity 
+Framework, LINQ, Stored Procedures  
+Team Size: 3 Developers  
+ 
+ 
+Project: LawyerApp (Kasbi)  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: LawyerApp is a Court Management System designed to streamline 
+and automate court administration and case management processes. The system 
+includes modules for case registration, document tracking, scheduling, and 
+reporting, ensuring efficient and transparent handling of legal proceedings.  
+Technologies Used:  
+• Frontend: HTML, CSS, JavaScript  
+• Backend: ASP.NET MVC, Microsoft SQL Server 2014, Entity Framework, 
+LINQ, Stored Procedures  
+Team Size: 1 Developer  
+ 
+Project: BinExLive  
+Company: Elaunch Solution Pvt. Ltd.  
+Description: BinExLive is a cryptocurrency trading platform designed for secure 
+and efficient buying, selling, and management of digital assets in the volatile 
+crypto market. The system provides real -time market analysis, automated 
+trading algorithms, and risk management tools, allowing traders to execute 
+informed trades and monitor price fluctuations. It includes robust security 
+features such as encryption and two -factor authentication to safeguard user 
+assets and trans actions.  
+Technologies Used:  • Frontend: Angular 4  
+• Backend: ASP.NET MVC, Web API 2, Microsoft SQL Server 2014, Stored 
+Procedures  
+Team Size: 2 Developers  
+ 
+Project: RSVP  
+Company: S.M. Solutions Pvt. Ltd.  
+Description: RSVP is an event and restaurant management system designed to 
+simplify event scheduling, guest management, and restaurant operations. The 
+platform is hosted on Microsoft Azure, utilizing four separate App Service 
+instances for Auth, Web API, Admin Panel, and Guest Panel. It supports 
+authentication via OIDC flow using cookies for local and social media logins, and 
+JWT tokens for API authentication. Authorization is managed through a custom 
+handler based on user  permissions specific to each restaurant or event.  
+Modules:  
+• Organizer: Allows event organizers to schedule, manage, and track 
+bookings and guest attendance efficiently.  
+• Guests: Enables guests to explore events and make reservations 
+seamlessly.  
+• Booking: Developed using StencilJS web components for cross -panel 
+reuse, ensuring consistency across Admin, Guest, and POS panels.  
+• POS (Point of Sale): Built using RxJS and Ionic/StencilJS to manage 
+restaurant table bookings through a reactive, event -driven design.  
+Technologies Used:  
+• Frontend: Angular 9, NgRx (State Management), RxJS, HTML, CSS, 
+StencilJS  
+• Backend: .NET Core, Web API, Entity Framework Core, Microsoft SQL 
+Server, Azure Functions  
+• Cloud Hosting: Microsoft Azure (App Services)  
+Team Size: 2 Developers  
+ 
+ 
+ 
+Project: Spotter  
+Company: ProjectTree Pvt. Ltd.  
+Description: Spotter is a Health Insurance Management web application 
+designed to manage employee and worksite -related insurance operations 
+efficiently. The system consolidates multiple sub -applications —OccDoc, 
+PartnerPanel, and CheckHire —into a single integrated platform. It follows a 
+microservices architecture to handle different modules, services, and reporting 
+functionalities, ensuring scalability and modularity across applications.  
+Technologies Used:  
+• Frontend: Angular 12  
+• Backend: .NET Core Web API, Microsoft SQL Server 2014, Stored 
+Procedures  
+Team Size: 3 Developers  
+ 
+ 
+ 
+ Project: GMS (Get My Service)  
+Company: Yosa Technology Pvt. Ltd.  
+Description: GMS (Get My Service) is a Service Provider Management System 
+designed to streamline service delivery across multiple domains such as 
+healthcare, IT, and consulting. The platform includes modules for client 
+management, scheduling, billing, and resource allocation, helping service 
+providers efficiently manage appointments, track customer data, and automate 
+invoicing. The system aims to enhance operational efficiency, improve customer 
+satisfaction, and simplify administrative workflows.  
+Technologies Used:  
+• Frontend: Angular 12  
+• Backend: Firebase  
+Team Size: 2 Developers  
+ 
+ 
+Project: MSM (Medical Service Management)  
+Company: Yosa Technology Pvt. Ltd.  
+Description: MSM is a Medical Service Management system designed to optimize 
+healthcare service delivery by streamlining operational processes, improving 
+patient care coordination, and ensuring compliance with healthcare regulations. 
+The platform focuses on efficient resource allocation, staff coordination, and 
+data -driven decision -making to enhance healthcare quality and patient 
+outcomes.  
+Technologies Used:  
+• Frontend: Angular 17  
+Team Size: 2 Developers  
+ 
+Project: Dr.Pro  
+Company:  ProjectTree Pvt. Ltd  
+Description:  
+Upgrade your healthcare experience with Dr.Pro , a simple, fast, and intuitive 
+software designed for doctors and clinics. The system streamlines the doctor–
+patient relationship  by offering efficient appointment management, patient 
+tracking, and communication tools. It helps healthcare professionals manage 
+their practice digitally with ease and improve overall service delivery.  
+Frontend:  Angular, PrimeNG  
+Backend:  .NET  
+Team Size:  — 5 
+ 
+Project: AJE Coke  
+Company: ProjectTree Pvt. Ltd.  
+Description: AJE Coke is a laboratory management and reporting system 
+designed to handle vessel -based sample collection, testing, and reporting 
+workflows. The platform enables complete traceability, dynamic test execution, 
+and automated result evaluation to ensure data accuracy and compliance with 
+client and regulatory standards. It supports multi -format analytical reporting, 
+improving operational efficiency and reducing manual intervention in lab 
+operations.  
+Technologies Used:  
+• Frontend: Angular 17  
+• Backend: .NET Core 8  • Reports: PDF and Excel Generation  
+Team Size: 2 Developers  
+ 
+ 
+Declaration  
+ 
+I hereby declare that the information provided above is true and correct to the 
+best of my knowledge and belief. I take full responsibility for the accuracy of the 
+particulars mentioned here  in. 
+ 
+Bharat Joshi  
+ 
+ 
