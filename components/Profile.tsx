@@ -1,15 +1,28 @@
 "use client";
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Profile.module.css';
 
 export default function Profile() {
   return (
     <section id="about" className={styles.section}>
-      <div className={styles.header}>
+      <motion.div 
+        className={styles.header}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className={styles.title}>About <span className="text-gradient">Me</span></h2>
-      </div>
-      <div className={styles.content}>
+      </motion.div>
+      <motion.div 
+        className={`glass ${styles.content}`}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 50 }}
+      >
         <p>
           Experienced Web Developer with comprehensive expertise in all stages of modern web development. 
           Skilled in user interface design, testing, and debugging, with strong experience in the design, 
@@ -21,7 +34,7 @@ export default function Profile() {
           to work effectively both independently and collaboratively in team environments, ensuring high-quality 
           and efficient project delivery.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }

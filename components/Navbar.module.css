@@ -2,31 +2,40 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(9, 9, 11, 0.7);
+    /* Deep charcoal semi-transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--card-border);
     padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.scrolled {
+    background: rgba(9, 9, 11, 0.9);
+    padding: 0.8rem 0;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 .navContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .navLink {
-    color: var(--foreground);
+    color: var(--muted);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
     position: relative;
+    letter-spacing: 0.02em;
 }
 
 .navLink::after {
@@ -36,15 +45,13 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    transition: width 0.3s ease;
+    background: var(--primary);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
 }
 
 .navLink:hover {
-    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--foreground);
 }
 
 .navLink:hover::after {
@@ -53,10 +60,18 @@
 
 @media (max-width: 768px) {
     .navContainer {
-        gap: 1rem;
+        gap: 1.5rem;
         overflow-x: auto;
         justify-content: flex-start;
         padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .navContainer::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
     }
 
     .navLink {

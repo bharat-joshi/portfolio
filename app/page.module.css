@@ -1,0 +1,44 @@
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+
+.heroArea {
+    grid-column: span 12;
+}
+
+.profileArea {
+    grid-column: span 12;
+}
+
+.skillsArea {
+    grid-column: span 12;
+}
+
+.projectsArea {
+    grid-column: span 12;
+}
+
+.educationArea {
+    grid-column: span 12;
+}
+
+@media (min-width: 1024px) {
+    .heroArea {
+        grid-column: span 8;
+    }
+
+    .profileArea {
+        grid-column: span 4;
+    }
+
+    .skillsArea {
+        grid-column: span 12;
+    }
+
+    .projectsArea {
+        grid-column: span 12;
+    }
+}

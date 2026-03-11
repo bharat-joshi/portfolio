@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
 
 const groupedProjects = [
@@ -15,7 +16,6 @@ const groupedProjects = [
           "Reduced market data latency by 30% through optimized Web API 2 endpoints"
         ],
         tech: ["Angular 4", "ASP.NET MVC", "Web API 2", "SQL Server"],
-        liveLink: "#"
       },
       {
         name: "DirectBazaar",
@@ -25,7 +25,6 @@ const groupedProjects = [
           "Scaled architecture to support a growing member base seamlessly"
         ],
         tech: ["JavaScript", "ASP.NET MVC", "SQL Server 2012"],
-        liveLink: "#"
       }
     ]
   },
@@ -39,8 +38,7 @@ const groupedProjects = [
           "Deployed highly available microservices to Azure App Services",
           "Built a seamless POS experience using advanced state management (NgRx/RxJS)"
         ],
-        tech: ["Angular 9", "NgRx", "RxJS", ".NET Core", "Azure App Services"],
-        liveLink: "#"
+        tech: ["Angular 9", "NgRx", "RxJS", ".NET Core", "Azure"],
       }
     ]
   },
@@ -55,8 +53,6 @@ const groupedProjects = [
           "Architected real-time updates handling 1,000+ daily concurrent users"
         ],
         tech: ["Angular 12", "Firebase"],
-        liveLink: "#",
-        githubLink: "#"
       },
       {
         name: "MSM",
@@ -66,7 +62,6 @@ const groupedProjects = [
           "Reduced administrative overhead by 25% through automated coordination"
         ],
         tech: ["Angular 17"],
-        liveLink: "#"
       }
     ]
   },
@@ -81,7 +76,6 @@ const groupedProjects = [
           "Implemented dynamic test execution ensuring 100% compliance traceability"
         ],
         tech: ["Angular 17", ".NET Core 8", "PDF/Excel Reports"],
-        liveLink: "#"
       },
       {
         name: "Spotter",
@@ -91,7 +85,6 @@ const groupedProjects = [
           "Enhanced system resilience and isolated module deployments"
         ],
         tech: ["Angular 12", ".NET Core Web API", "SQL Server"],
-        liveLink: "#"
       },
       {
         name: "Dr.Pro",
@@ -101,47 +94,68 @@ const groupedProjects = [
           "Improved patient engagement through optimized doctor schedules"
         ],
         tech: ["Angular 17", "PrimeNG", ".NET"],
-        liveLink: "#"
       }
     ]
   },
- 
 ];
+
+const containerVariants: any = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const cardVariants: any = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 20 },
+  },
+};
 
 export default function Projects() {
   return (
     <section id="projects" className={styles.section}>
-      <div className={styles.header}>
+      <motion.div 
+        className={styles.header}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className={styles.title}>Featured <span className="text-gradient">Projects</span></h2>
-        <p className={styles.subtitle}>Professional projects categorized by company.</p>
-      </div>
+        <p className={styles.subtitle}>Professional impact categorized by company.</p>
+      </motion.div>
 
       <div className={styles.companyList}>
         {groupedProjects.map((group, groupIdx) => (
-          <div key={groupIdx} className={styles.companySection}>
+          <motion.div 
+            key={groupIdx} 
+            className={styles.companySection}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={containerVariants}
+          >
             <div className={styles.companyHeader}>
               <span className={styles.companyIcon}>🏢</span>
               <h3 className={styles.companyNameHeading}>{group.company}</h3>
             </div>
+            
             <div className={styles.grid}>
               {group.projects.map((proj, idx) => (
-                <div key={idx} className={styles.card}>
+                <motion.div key={idx} variants={cardVariants} className={`glass ${styles.card}`}>
                   <div className={styles.cardHeader}>
                     <h4 className={styles.projectName}>{proj.name}</h4>
-                    <div className={styles.projectLinks}>
-                      {/* {proj.liveLink && (
-                        <a href={proj.liveLink} target="_blank" rel="noopener noreferrer" className={styles.linkIcon} title="Live Demo">
-                          🌐 Demo
-                        </a>
-                      )} */}
-                      {/* {proj.githubLink && (
-                        <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className={styles.linkIcon} title="Source Code">
-                          💻 Code
-                        </a>
-                      )} */}
-                    </div>
                   </div>
+                  
                   <p className={styles.description}>{proj.description}</p>
+                  
                   {proj.impact && (
                     <ul className={styles.impactList}>
                       {proj.impact.map((item, i) => (
@@ -149,15 +163,16 @@ export default function Projects() {
                       ))}
                     </ul>
                   )}
+                  
                   <div className={styles.techStack}>
                     {proj.tech.map((t, index) => (
                       <span key={index} className={styles.techTag}>{t}</span>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

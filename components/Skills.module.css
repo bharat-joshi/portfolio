@@ -1,31 +1,37 @@
 .section {
-    padding: 6rem 0;
-    max-width: 1000px;
-    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 4rem;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex: 1;
 }
 
 .skillsBox {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 2.5rem;
-    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 3rem;
+    backdrop-filter: blur(16px);
+    transition: all 0.3s ease;
 }
 
 .subtitle {
@@ -42,35 +48,58 @@
 }
 
 .tag {
-    background: rgba(138, 43, 226, 0.1);
-    border: 1px solid rgba(138, 43, 226, 0.5);
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 500;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
     transition: all 0.3s ease;
-    animation: fadeInUp 0.5s ease backwards;
+    filter: grayscale(80%);
 }
 
 .tag:hover {
-    background: var(--accent);
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--card-border-hover);
+    color: var(--foreground);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+.tag:hover .iconWrapper {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
 .sideBox {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .box {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 2rem;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
     flex: 1;
+    transition: all 0.3s ease;
 }
 
 .list {
