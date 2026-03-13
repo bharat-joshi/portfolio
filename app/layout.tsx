@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BinaryBackground from "@/components/BinaryBackground";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -72,9 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased text-foreground bg-background`}>
-        <div className="bg-animation">
-          <div className="bg-grid"></div>
-        </div>
+        <BinaryBackground />
         <div className="relative z-10">
           <Navbar />
           {children}
