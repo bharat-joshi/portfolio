@@ -129,4 +129,9 @@ a.contactItem:hover {
     .title {
         font-size: 2rem;
     }
+
+    .info, .socials {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
