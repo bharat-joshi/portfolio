@@ -71,10 +71,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${inter.variable} antialiased text-foreground bg-background`}>
+        <div className="bg-animation">
+          <div className="bg-grid"></div>
+        </div>
+        <div className="relative z-10">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
