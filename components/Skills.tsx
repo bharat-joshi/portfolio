@@ -27,13 +27,6 @@ const skills = [
   { name: "Git", icon: <SiGit />, color: "#F05032" }
 ];
 
-const languages = [
-  "Gujarati", "Hindi", "English"
-];
-
-const hobbies = [
-  "Reading", "Watching Movies", "Learning new tech"
-];
 
 const containerVariants: any = {
   hidden: { opacity: 0 },
@@ -68,11 +61,11 @@ export default function Skills() {
         <h2 className={styles.title}>Skills & <span className="text-gradient">Expertise</span></h2>
       </motion.div>
       
-      <div className={styles.gridContainer}>
+
         <motion.div 
           className={styles.skillsBox}
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
         >
@@ -99,39 +92,6 @@ export default function Skills() {
             ))}
           </motion.div>
         </motion.div>
-
-        <div className={styles.sideBox}>
-          <motion.div 
-            className={styles.box}
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h3 className={styles.subtitle}>Languages</h3>
-            <ul className={styles.list}>
-              {languages.map((lang, index) => (
-                <li key={index}>{lang}</li>
-              ))}
-            </ul>
-          </motion.div>
-          
-          <motion.div 
-            className={styles.box}
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <h3 className={styles.subtitle}>Hobbies</h3>
-            <ul className={styles.list}>
-              {hobbies.map((hobby, index) => (
-                <li key={index}>{hobby}</li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-      </div>
     </section>
   );
 }
