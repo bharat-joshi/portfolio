@@ -22,10 +22,16 @@ export default function Education() {
           <div key={idx} className={styles.timelineItem}>
             <div className={styles.timelineDot}></div>
             <div className={styles.timelineContent}>
-              <div className={styles.date}>{edu.year}</div>
-              <h3 className={styles.degree}>{edu.degree}</h3>
-              <div className={styles.institution}>{edu.institution}</div>
-              <div className={styles.score}>{edu.score}</div>
+              <div className={styles.infoRow}>
+                <div className={styles.leftGroup}>
+                  <h3 className={styles.degree}>{edu.degree}</h3>
+                  <div className={styles.institution}>{edu.institution}</div>
+                </div>
+                <div className={styles.rightGroup}>
+                  <div className={styles.date}>{edu.year}</div>
+                  <div className={styles.score}>{edu.score}</div>
+                </div>
+              </div>
             </div>
           </div>
         ))}

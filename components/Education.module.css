@@ -20,7 +20,7 @@
 
 .timeline {
     position: relative;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .timeline::before {
@@ -35,7 +35,7 @@
 
 .timelineItem {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .timelineItem:last-child {
@@ -44,15 +44,15 @@
 
 .timelineDot {
     position: absolute;
-    top: 0;
-    left: -3.4rem;
-    /* 3rem (padding) + 1px (line center) + dot offset */
-    width: 20px;
-    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.3rem;
+    width: 12px;
+    height: 12px;
     background: var(--background);
-    border: 4px solid var(--primary);
+    border: 3px solid var(--primary);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 8px var(--primary);
     z-index: 1;
 }
 
@@ -60,51 +60,95 @@
     background: var(--card-bg);
     backdrop-filter: blur(12px);
     border: 1px solid var(--card-border);
-    padding: 2rem;
-    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
     transition: all 0.3s ease;
     position: relative;
+    width: 100%;
 }
 
 .timelineContent:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
     border-color: rgba(0, 240, 255, 0.4);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.leftGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.rightGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+.degree {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--foreground);
+    white-space: nowrap;
+}
+
+.institution {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .date {
     color: var(--secondary);
     font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.degree {
-    font-size: 1.8rem;
-    margin: 0 0 0.5rem 0;
-    color: var(--foreground);
-}
-
-.institution {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
 .score {
-    display: inline-block;
     background: rgba(255, 255, 255, 0.05);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
     color: var(--primary);
+    margin: 0;
+    white-space: nowrap;
+    min-width: 130px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .infoRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .leftGroup, .rightGroup {
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .section {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     .title {
@@ -112,14 +156,14 @@
     }
 
     .timeline {
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
 
     .timelineDot {
-        left: -2.4rem;
+        left: -1.75rem;
     }
 
     .timelineContent {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
